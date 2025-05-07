@@ -1,0 +1,28 @@
+[project]
+name = "energy-sales-forecast"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "exeramosm",email = "exeramosm96@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "pandas (>=2.2.3,<3.0.0)",
+    "numpy (>=2.2.5,<3.0.0)",
+    "matplotlib (>=3.10.1,<4.0.0)",
+    "statsmodels (>=0.14.4,<0.15.0)",
+    "scikit-learn (>=1.6.1,<2.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.5"
+pytest-cov = "^6.1.1"
+mypy = "^1.15.0"
+pre-commit = "^4.2.0"
+
